@@ -1,52 +1,254 @@
-.navbar-sushi{
-	background-color: rgba(238,100,102,75%);
+*{
+	font-family: arial;
 }
 
-.navbar-sushi .navbar-nav .nav-item{
-	padding: 0 10px;
-}
-
-.navbar-sushi .navbar-nav .nav-item .nav-link{
-	color: white;
+h1,h2,h3,h4{
 	font-weight: bold;
 }
 
-.navbar-sushi a.navbar-brand img{
-	padding: 0 10px;
-}
-
-section.banner {
-	background-image: url(assets/img/background.png);
-	/*height: calc(100vh+200px);*/
+/*FULL SCREEN CLASS*/
+.FULLSCREEN{
 	width: 100%;
-	height: 1000px;
-	display: flex;
-	align-items: center;
-	background-size: cover;
-	background-position: bottom; 
+	height: 100vh;
+	box-sizing: border-box;
 }
+/*FULL SCREEN CLASS*/
 
-section.banner .keterangan{
-	margin-top: -80px;
+/*FONT COLOR*/
+.MAIN-FONT-COLOR{
+	color: rgb(255,127,127);
 }
+/*FONT COLOR*/
 
-section.banner .keterangan h1{
-	font-size: 70px;
-	color: white;
-}
-
-section.banner .keterangan p{
-	font-size: 25px;
-	color: white;
-}
-
-.btn-order-now{
-	padding: 5px 50px;
+/*BUTTON COLOR*/
+.SUSHIME-BUTTON-COLOR{
+	width: 50%;
+	font-weight: bold;
 	border-radius: 9999px;
-	color: rgb(238,100,102);
+	border: 1px solid white;
+	background-color: white;
+	color: rgb(255,127,127);
+}
+.MAIN-BUTTON-COLOR{
+	width: 60%;
+	font-weight: bold;
+	border-radius: 9999px;
+	border: 1px solid rgb(255,127,127);
+	background-color: rgb(255,127,127);
+	color: white;
+}
+/*BUTTON COLOR*/
+
+/*---------------------------------------------------------*/
+
+/*SECTION SUSHIME*/
+section#Sushime{ 
+	background-image: url(assets/bg-01.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+section#Sushime div.Text-Sushime{
+	margin-top: 180px;
+	width: 90%;
+}
+section#Sushime div.Text-Sushime h1{
+	font-size: 65px;
+}
+section#Sushime div.Text-Sushime p{
+	font-size: 20px;
+}
+/*SECTION SUSHIME*/
+
+/*---------------------------------------------------------*/
+
+/*SECTION BEST SELLER*/
+section#BestSeller{
+	background-image: url(assets/bg-02.jpg);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+	padding-top: 110px;
+}
+section#BestSeller div.container div.Text-BestSeller{
+	margin: 0 auto 30px;
+	font-size: 20px;
+	width: 60%;
+}
+section#BestSeller div.container div.Text-BestSeller span{
+	display: block;
+}
+
+section#BestSeller div.container img{
+	padding-bottom: 20px;
+}
+
+/*SECTION BEST SELLER*/
+
+/*---------------------------------------------------------*/
+
+/*SECTION BEST TASTY*/
+section#BestTasty{
+	padding-top: 100px;
+	background-image: url(assets/best-tasty/shape.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	color: rgb(255,127,127);
+}
+section#BestTasty div.container img{
+	display: block;
+	width: 80%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+section#BestTasty div.container div.Text-BestTasty{
+	margin-top: 60px;
+}
+/*SECTION BEST TASTY*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*SECTION STATISTICS*/
+section#Statistics{
+	background-color: rgb(255,127,127);
+	color: white;
+}
+section#Statistics  div.container div.Text-Statistics{
+	width: 50%;
+	text-align: center;
+	margin: 60px auto 100px;
+}
+section#Statistics  div.container div.Circle-Statistics{
+	margin: 0 auto;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: rgb(255,127,127);
+	box-sizing: border-box;
+	font-weight: bold;
+	border: 5px solid white;
+}
+
+section#Statistics  div.container div.Circle-Statistics p{
+	text-align: center;
+	margin: auto;
+	padding: 70px 0;
+	font-size: 70px;
+	line-height: 1;
+}
+
+section#Statistics  div.container div.Circle-Statistics p span{
+	display: block;
+	font-size: 35px;;
+}
+/*SECTION STATISTICS*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*SECTION DELICIOUS*/
+section#Delicious{
+	color: rgb(255,127,127);
+	padding: 200px 0;
+}
+section#Delicious div.container div.Text-Delicious{
+	margin: 0 auto;
+}
+section#Delicious div.container img{
+	display: block;
+	margin: -80px auto 0;
+	width: 80%;
+	max-width: 350px;
+}
+/*SECTION DELICIOUS*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*SECTION PROFILE*/
+section#Profile{
+	background-image: url(assets/bg-03.jpg);
+	background-repeat: no-repeat;
+	background-position: top bottom;
+	background-size: cover;
+}
+section#Profile div.container div.Box-Profile{
+	width: 80%;
+	margin: 100px auto 0;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+}
+section#Profile div.container div.Box-Profile span{
 	font-weight: bold;
 }
-
-div.navbar-collapse form.form-inline input.closed{
-	display: none;
+section#Profile div.container div.Box-Profile img{
+	display: block;
+	margin: 0 auto;
 }
+/*SECTION PROFILE*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*SECTION SUBSCRIBE*/
+section#Subscribe{
+	background-image: url(assets/shape-03.jpg);
+	background-position: bottom;
+	background-size: cover;
+}
+section#Subscribe div.container div.Text-Subscribe{
+	color: rgb(255,127,127);
+	width: 70%;
+	margin: 125px auto 0;
+	text-align: center;
+	font-size: 30px;
+}
+section#Subscribe div.container div.Text-Subscribe h2{
+	font-size: 40px;
+}
+/*SECTION SUBSCRIBE*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*SECTION CONTACT */
+section#Contact{
+	color: white;
+	background-color: rgb(17,17,17);
+	padding-top: 220px;
+}
+section#Contact div.Text-Contact{
+	width: 80%;
+}
+section#Contact div.Text-Contact h3{
+	font-weight: normal;
+}
+section#Contact div.container ul.MEDIA-SOCIAL{
+	padding: 0;
+}
+section#Contact div.container ul.MEDIA-SOCIAL li{
+	display: inline;
+	margin: 0 5px;
+}
+section#Contact div.container ul{
+	margin: -22px auto 0;
+	font-size: 25px;
+	line-height: 3;
+}
+section#Contact div.container ul li{
+	font-size: 16px;
+	line-height: 2;
+}
+/*SECTION CONTACT */
